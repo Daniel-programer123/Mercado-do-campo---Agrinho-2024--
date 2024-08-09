@@ -1,0 +1,75 @@
+:root{
+    --branco: white; 
+    --azul-claro: rgb(15, 91, 163)
+}
+
+.nome {
+    margin-left: 5px;
+}
+
+.vendedor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.saibamais{
+    color: var(--azul-claro);
+}
+
+.foto {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 5%;
+}
+
+.section{
+    padding-top: 10%;
+    gap: 25px 25px;
+    width: 50%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+iframe{
+    width: 100% !important; 
+}
+.elemento {
+    z-index: 1;
+    background-color: var(--branco);
+    padding: 10px;
+    border-radius: 3%;
+    transition: all ease-in .2s;
+}
+
+
+.elemento:hover{
+    transform: scale(102%);
+}
+
+.elemento img {
+    width: 100%;
+    height: 200px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .section {
+        padding-top: 20%;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .section {
+        padding-top: 30%;
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .section {
+        padding-top: 35%;
+        width: 90%;
+    }
+}

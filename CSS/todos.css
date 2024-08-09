@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --azul-escuro: #001524;
+    --azul-claro: #053c64d7;
+    --branco: white; 
+    --branco-fundo: rgba(227, 230, 229, 255);
+}
+
+* {
+    padding: 0;
+    margin: 0
+}
+
+html {
+    background-color: rgba(227, 230, 229, 255);
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+}
+
+@media (max-width: 800px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.logo {
+    position: relative;
+    width: 80px;
+    margin-left: 10vw;
+    float: left;
+}
+
+.rodape {
+    background-color: var(--azul-escuro);
+}
+
+.topo {
+    background-color: var(--azul-escuro);
+    background-image: linear-gradient(var(--azul-escuro), var(--azul-claro));
+    z-index: 100;
+    width: 100%;
+    padding-top: 25px;
+    position: fixed;
+    top: 0;
+}
+
+#slogan {
+    color: var(--branco);
+    font-family: "Oswald", sans-serif;
+    font-size: 45px;
+    font-weight: lighter;
+    padding-bottom: 30px;
+    text-align: center;
+    margin-right: calc(10vw + 90px);
+}
+
+.botoes {
+    margin-top: 0px;
+    text-align: center;
+    width: 100%;
+    background-color: var(--azul-claro);
+}
+
+.botao {
+    color: var(--branco);
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    font-size: 20px;
+    margin-right: 100px;
+    padding: 5px 10px ;
+}
+
+.botao:hover {
+    background-color: var(--azul-escuro);
+}
+
+.botao__atual  {
+    color: var(--azul-claro);
+    background-color: var(--branco-fundo);
+}
+.botao__atual a {
+    color: var(--azul-claro);
+    
+}
+
+a {
+    color: var(--branco-fundo);
+    text-decoration: none;
+}
+
+
+.rodape {
+    width: 100%;
+    text-align: center;
+    color: var(--branco);
+    margin-top: 50px;
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.informacoes {
+    margin-left: 20px;
+}
+
+.logo__rodape {
+    width: 75px;
+    
+}
+
+.redes img {
+    filter: invert(1);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}

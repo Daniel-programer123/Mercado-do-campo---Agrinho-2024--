@@ -1,0 +1,42 @@
+:root {
+    --azul-escuro: #001524;
+}
+
+.section{
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 10%;
+    text-align: center;
+}
+
+.section p{
+    font-size: 1.35rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.title{
+    font-weight: 500;
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: 4px solid var(--azul-escuro);
+    margin: 0 auto 50px auto;
+}
+
+@media only screen and (max-width: 1400px) {
+    .conteiner {
+        padding-top: 20%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .section {
+        padding-top: 30%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .section{
+        padding-top: 35%;
+    }
+}
